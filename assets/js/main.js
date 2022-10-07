@@ -7,30 +7,6 @@
 // va applicato uno sconto del 40% per gli over 65.
 
 //infomrazioni principali
-
-const fullName = prompt("Indica il tuo nome completo");
-console.log(fullName);
-const kmScelti = prompt ("Quanti kilometri vuole percorrere?");
-console.log(kmScelti);
-const age = prompt ("Quanti anni hai?");
-console.log(age);
-
-
-const euro ="€";
-const price = 0.21;
-const totalPrice = (kmScelti * price);
-console.log(totalPrice);
-
-if(age<=18){
-    const sconto = totalPrice * 20 / 100 ;
-    const prezzoFinale = totalPrice - sconto;
-
-} else if (age>=65){
-    const sconto = totalPrice * 40 / 100 ;
-    const prezzoFinale = totalPrice - sconto;
-
-}
-
 const buttonGenerator = document.getElementById("genera");
 
 buttonGenerator.addEventListener ("click", function() {
@@ -38,3 +14,32 @@ buttonGenerator.addEventListener ("click", function() {
         console.log('hai cliccato sulla colonna');
       
 })
+
+const fullName = document.getElementById("name");
+console.log('fullName', full_name.value );
+console.log('fullName', document.getElementById("name").value );
+buttonGenerator.addEventListener("click" , function(){
+
+})
+
+// const kmScelti = prompt ("Quanti kilometri vuole percorrere?");
+// console.log(kmScelti);
+// const age = prompt ("Quanti anni hai?");
+// console.log(age);
+
+
+// const euro ="€";
+// const price = 0.21;
+// const totalPrice = (kmScelti * price);
+// console.log(totalPrice);
+
+// if(age<=18){
+//     const sconto = totalPrice * 20 / 100 ;
+//     const prezzoFinale = totalPrice - sconto;
+
+// } else if (age>=65){
+//     const sconto = totalPrice * 40 / 100 ;
+//     const prezzoFinale = totalPrice - sconto;
+
+// }
+
